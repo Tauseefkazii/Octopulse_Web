@@ -1,7 +1,7 @@
+import "./globals.css"
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
 import { Navigation } from "@/components/navigation"
 // import { Footer } from "@/components/footer"
 import { PageTransition } from "@/components/page-transition"
