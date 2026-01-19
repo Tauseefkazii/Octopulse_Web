@@ -44,27 +44,60 @@ export default function OurWork() {
         </div>
       </div>
 
-      {/* ROW 2 — FULL WIDTH */}
-      <div className="bg-[#faf4f0] group cursor-pointer">
+      {/* ROW 2 — FULL WIDTH WITH HOVER */}
+      <div className="group relative bg-[#faf4f0] cursor-pointer overflow-hidden">
         <div className="max-w-7xl mx-auto px-10 sm:px-14 py-20 sm:py-24 grid lg:grid-cols-2 gap-16 sm:gap-20 items-center">
+          {/* LEFT CONTENT */}
           <div>
             <Tags tags={["Website"]} />
             <h3 className="work-title leading-tight">
-              Social Media <br />
+              Social Media
             </h3>
             <p className="mt-6 text-lg text-[#2E2A5A]/80">
               Keep your finger on the pulse of your growth.
             </p>
           </div>
 
+          {/* IMAGE */}
           <div className="relative overflow-hidden rounded-2xl max-h-[260px] sm:max-h-[320px] lg:max-h-none">
             <img
               src="/socialmedia.jpg"
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              alt="Social Media"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
             />
           </div>
         </div>
+
+        {/* HOVER OVERLAY */}
+
+    <div
+      className="
+        absolute inset-0 flex items-center justify-center
+        opacity-0 group-hover:opacity-100
+        transition-all duration-500 ease-out
+        bg-gradient-to-r
+        from-[#1E1B4B]/90
+        via-[#2E2A5A]/80
+        to-[#1E1B4B]/60
+        backdrop-blur-[2px]
+      "
+    >
+          <div className="w-full px-10 sm:px-14 pb-12">
+            <p className="text-xs sm:text-sm uppercase tracking-widest text-white/70">
+              Social Media
+            </p>
+            {/* <p className="mt-4 max-w-3xl text-sm sm:text-base leading-relaxed text-white/90"> */}
+            <p className="mt-4 text-xs sm:text-sm uppercase tracking-widest text-white/80">
+              We manage and scale your social media presence with data-driven strategies.
+              Through creative storytelling and consistent engagement,
+              we help brands build loyal communities.
+              Strengthen visibility, spark conversations,
+              and drive measurable, sustainable growth.
+            </p>
+          </div>
+        </div>
       </div>
+
 
       {/* ROW 3 — 2 CARDS */}
       <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -73,8 +106,8 @@ export default function OurWork() {
           title="Email Marketing"
           tags={["Product", "SaaS"]}
           image="/email.jpeg"
-          meta="Boost engagement and conversions with targeted email campaigns. 
-              From personalized newsletters to automated workflows, we help brands nurture leads, retain customers, and drive measurable growth."
+          meta="Boost engagement and conversions with targeted email campaigns. From personalized newsletters to automated workflows, we help brands nurture meaningful relationships. Drive customer retention, increase ROI, and turn emails into measurable growth."
+
         />
 
         <WorkCard
@@ -88,31 +121,61 @@ export default function OurWork() {
         />
       </div>
 
-      {/* ROW 6 — FULL WIDTH */}
-      <div className="bg-[#faf4f0] group cursor-pointer">
+      {/* ROW 2 — FULL WIDTH WITH HOVER */}
+      <div className="group relative bg-[#faf4f0] cursor-pointer overflow-hidden">
         <div className="max-w-7xl mx-auto px-10 sm:px-14 py-20 sm:py-24 grid lg:grid-cols-2 gap-16 sm:gap-20 items-center">
-        <div>
-          <Tags tags={["Website", "Digital Strategy"]} />
+          {/* LEFT CONTENT */}
+          <div>
+            <Tags tags={["Digital Agency"]} />
+            <h3 className="work-title leading-tight">
+              Octopulse <br /> Digital Experience
+            </h3>
+            <p className="mt-6 text-lg text-[#2E2A5A]/80">
+              Designed and developed by Octopulse to help brands communicate with
+              clarity, authority, and impact.
+            </p>
+          </div>
 
-          <h3 className="work-title leading-tight">
-            Octopulse <br /> Digital Experience
-          </h3>
-
-          <p className="mt-6 text-lg text-[#2E2A5A]/80">
-            Designed and developed by Octopulse to help brands communicate with
-            clarity, authority, and impact. 
-          </p>
-        </div>
-
-
+          {/* IMAGE */}
           <div className="relative overflow-hidden rounded-2xl max-h-[260px] sm:max-h-[320px] lg:max-h-none">
             <img
               src="/analytics.jpg"
-              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              alt="Social Media"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
             />
           </div>
         </div>
+
+        {/* HOVER OVERLAY */}
+
+    <div
+      className="
+        absolute inset-0 flex items-center justify-center
+        opacity-0 group-hover:opacity-100
+        transition-all duration-500 ease-out
+        bg-gradient-to-r
+        from-[#1E1B4B]/90
+        via-[#2E2A5A]/80
+        to-[#1E1B4B]/60
+        backdrop-blur-[2px]
+      "
+    >
+          <div className="w-full px-10 sm:px-14 pb-12">
+            <p className="text-xs sm:text-sm uppercase tracking-widest text-white/70">
+              Octopulse Digital Experience
+            </p>
+            {/* <p className="mt-4 max-w-3xl text-sm sm:text-base leading-relaxed text-white/90"> */}
+            <p className="mt-4 text-xs sm:text-sm uppercase tracking-widest text-white/80">
+              A complete digital experience crafted to elevate modern brands.
+              From strategy and design to performance-driven execution,
+              we help businesses communicate with clarity and authority.
+              Built for impact, scalability, and long-term growth.
+            </p>
+          </div>
+        </div>
       </div>
+
+
 
       {/* SEE MORE WORK CTA */}
       <div className="relative w-full mt-0 overflow-hidden">
@@ -122,23 +185,23 @@ export default function OurWork() {
               See more work
             </h3>
 
-          {/* <a
-            href="https://wa.me/919876543210" // replace with your WhatsApp number with country code
+          <a
+            href="https://wa.me/447938998379" // replace with your WhatsApp number with country code
             target="_blank"
             rel="noopener noreferrer"
-          > */}
+          >
 
-            {/* <button className="group inline-flex items-center gap-3 px-10 py-4 rounded-full bg-[#1E1A4D] text-white text-base font-medium transition-all duration-300 hover:scale-105"> */}
-              <button
+            <button className="group inline-flex items-center gap-3 px-10 py-4 rounded-full bg-[#1E1A4D] text-white text-base font-medium transition-all duration-300 hover:scale-105">
+              {/* <button
                 onClick={handleWhatsAppClick}
                 className="group inline-flex items-center gap-3 px-10 py-4 rounded-full bg-[#1E1A4D] text-white text-base font-medium transition-all duration-300 hover:scale-105"
-              >
-              Explore
+              > */}
+              Connect Us With Whatsapp
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
             </button>
-          {/* </a> */}
+          </a>
 
           </div>
 
