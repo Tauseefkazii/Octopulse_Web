@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { OctopulseLogo } from "@/components/OctopulseLogo"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -80,19 +79,21 @@ export function Navigation({ setPendingScrollTarget }: NavigationProps) {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
 
-            {/* Logo */}
+            {/* ✅ Logo (PNG Added Here) */}
             <Link
               href="/"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="flex items-center gap-2"
             >
-              <OctopulseLogo size={70} className="animate-float" />
-
-              {/* <span className="text-2xl font-bold text-[#1b1464] sekuya-regular">
-                Octopulses */}
-              {/* </span> */}
+              <Image
+                src="/octopulselogo.png"
+                alt="Octopulse Logo"
+                width={120}
+                height={50}
+                className="object-contain animate-float"
+                priority
+              />
             </Link>
-
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-8">
